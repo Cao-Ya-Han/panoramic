@@ -1,7 +1,7 @@
 // eslint-disable-next-line max-len
 import {Scene, CubeTextureLoader, PerspectiveCamera, WebGLRenderer} from '../node_modules/three/build/three.module.js'
-// eslint-disable-next-line max-len
-import {OrbitControls} from '../node_modules/three/examples/jsm/controls/OrbitControls.js'
+
+import { OrbitControls } from "../node_modules/three/examples/jsm/controls/OrbitControls.js";
 
 const scene = new Scene()
 const urls = [
@@ -37,4 +37,4 @@ function render() {
 render()
 
 // eslint-disable-next-line no-unused-vars
-const controls = new OrbitControls(camera)
+const controls = new OrbitControls(camera, document.body)
